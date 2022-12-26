@@ -6,4 +6,26 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Remove="Pages\AddCategoryComponent.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CoreBusiness\CoreBusiness.csproj" />
+    <ProjectReference Include="..\Plugins.DataStore.InMemory\Plugins.DataStore.InMemory.csproj" />
+    <ProjectReference Include="..\UseCases\UseCases.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\AddCategoryComponent.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Pages\AddCategoryComponent.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Pages\AddCategoryComponent.razor" />
+  </ItemGroup>
+
 </Project>
